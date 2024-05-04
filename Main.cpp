@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<vector>
 #include<conio.h>
@@ -47,3 +48,4 @@ namespace consolebackground
     YELLOW            = BACKGROUND_INTENSITY | BACKGROUND_RED | BACKGROUND_GREEN,
     WHITE             = BACKGROUND_INTENSITY | BACKGROUND_RED | BACKGROUND_GREEN | BACKGROUND_BLUE,
   };
+}
