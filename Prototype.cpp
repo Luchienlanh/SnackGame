@@ -63,3 +63,6 @@ void pause_menu();
 void remove_pause();
 void settings();
 void welcome_to();
+vector<int> snake;
+bool food_eaten=1,colour=1,kids=0,self_hit=1,reverse_snake=0;
+int width=27,lenght=118,food_x=-1,food_y=-2,hsc,time1=50;
