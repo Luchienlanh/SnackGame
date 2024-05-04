@@ -6,12 +6,14 @@ void hidecursor()
    info.bVisible = FALSE;
    SetConsoleCursorInfo(consoleHandle, &info);
 }
+
 void setConsoleColour(unsigned short colour)
 {
     static const HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
     std::cout.flush();
     SetConsoleTextAttribute(hOut, colour);
 }
+
 void setcursor(int x, int y)
 {
     static const HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
