@@ -15,9 +15,6 @@ int main(){
 			if(kbhit()){
 				i1=getch();
 				if(i1==72 && (i2!=80 || reverse_snake))				i2=i1,move_snake(-1,'v');
-				else if(i1==80 && (i2!=72 || reverse_snake))			i2=i1,move_snake(1,'v');
-				else if(i1==75 && (i2!=77 || reverse_snake))			i2=i1,move_snake(-1,'h');
-				else if(i1==77 && (i2!=75 || reverse_snake))			i2=i1,move_snake(1,'h');
 				else if(i1==112){
 					pause_menu();
 					while(1){
