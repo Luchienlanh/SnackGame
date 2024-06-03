@@ -20,5 +20,21 @@ void move_snake(int move,char direction){
 	else if(snake[snake.end()-snake.begin()-2]==width && kids)				snake[snake.end()-snake.begin()-2]-=width;
 
 	setcursor(snake.back()+1,snake[snake.end()-snake.begin()-2]+2);
-	
+	if(colour){
+		setConsoleColour(consolebackground::WHITE);
+		cout<<" ";
+	}
+	else{
+		setConsoleColour(consoleforeground::WHITE);
+		cout<<"O";
+	}
+	setcursor(snake[snake.end()-snake.begin()-3]+1,snake[snake.end()-snake.begin()-4]+2);
+	if(colour){
+		setConsoleColour(consolebackground::RED);
+		cout<<" ";
+	}
+	else{
+		setConsoleColour(consoleforeground::RED);
+		cout<<"o";
+	}
 }
